@@ -1,0 +1,74 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Noite",
+  "mainBinaryName": "Noite",
+  "version": "1.1.4",
+  "identifier": "com.grutexpa.proyecto-noche",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Noite",
+        "width": 1200,
+        "height": 720,
+        "minWidth": 960,
+        "minHeight": 640,
+        "resizable": true,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self' https://open.spotify.com; img-src 'self' asset: http://asset.localhost data: https://www.themoviedb.org https://image.tmdb.org https://images.igdb.com https://i.scdn.co https://*.scdn.co https://*.spotifycdn.com; media-src 'self' asset: http://asset.localhost data: blob:; frame-src https://open.spotify.com; connect-src 'self' ipc: http://ipc.localhost; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; frame-ancestors 'none'",
+      "assetProtocol": {
+        "enable": true,
+        "scope": [
+          "$APPDATA/media/**/*"
+        ]
+      }
+    }
+  },
+  "plugins": {},
+  "bundle": {
+    "active": true,
+    "publisher": "Grutexpa",
+    "copyright": "Copyright © 2026 Grutexpa. Todos los derechos reservados.",
+    "licenseFile": "../../../LICENSE.txt",
+    "category": "Lifestyle",
+    "resources": [
+      "../../../LICENSE.txt",
+      "../../../THIRD_PARTY_NOTICES.md",
+      "../../../THIRD_PARTY_LICENSES.md",
+      "../../../docs/EULA_NOITE.md",
+      "../../../docs/PRIVACY_POLICY_NOITE.md"
+    ],
+    "targets": [
+      "nsis"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": [
+          "Spanish",
+          "English"
+        ],
+        "displayLanguageSelector": false,
+        "installerHooks": "./windows/hooks.nsh"
+      },
+      "wix": {
+        "language": "es-ES"
+      }
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

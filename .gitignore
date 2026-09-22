@@ -1,0 +1,16 @@
+node_modules/
+dist/
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/
+artifacts/
+.env
+.env.*
+*.pfx
+*.p12
+*.key
+*.sqlite3
+*.noche
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db

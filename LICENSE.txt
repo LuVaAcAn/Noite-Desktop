@@ -1,0 +1,16 @@
+Noite Proprietary Software License
+
+Copyright (c) 2026 Grutexpa. All rights reserved.
+
+Noite and its source code are proprietary software. No permission is granted to
+copy, modify, redistribute, sublicense, reverse engineer, or create derivative
+works except where applicable law expressly permits it or where a separate
+written agreement with Grutexpa says otherwise.
+
+The compiled application may be installed and used for personal, non-commercial
+purposes subject to the End User License Agreement in docs/EULA_NOITE.md.
+
+Third-party components remain governed by their respective licenses. See
+THIRD_PARTY_NOTICES.md.
+
+Contact: luva.acan@gmail.com

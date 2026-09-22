@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dark-input {
+    @apply h-12 w-full rounded-xl border border-white/15 bg-black/30 px-4 text-white outline-none transition placeholder:text-white/30 focus:border-purple-400;
+  }
+}
+
+@keyframes cover-in {
+  to { opacity: 1; }
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --font-script: "Space Mono", monospace;
+    --noche-bg: 247 251 255;
+    --noche-surface: 255 255 255;
+    --noche-surface-hover: 238 247 253;
+    --noche-border: 207 220 235;
+    --noche-text: 17 24 39;
+    --noche-muted: 91 107 124;
+    --theme-accent: 168 85 247;
+    --shell-gutter: clamp(18px, 3vw, 48px);
+    --content-pad-y: clamp(14px, 2vh, 24px);
+    --floating-controls-clearance: 7.25rem;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    @apply bg-noche-bg text-noche-text font-body antialiased;
+    background: linear-gradient(145deg, #fafaff, #f3edff);
+  }
+
+  #root {
+    isolation: isolate;
+  }
+
+  /* NFR-A11Y-002 — el foco siempre debe ser visible */
+  :focus-visible {
+    outline: 2px solid rgb(var(--theme-accent));
+    outline-offset: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-noche-border rounded-pill;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer components {
+  .layer-floating { z-index: 40; }
+  .layer-chrome { z-index: 50; }
+  .layer-header { z-index: 60; }
+  .layer-header-popover { z-index: 70; }
+  /* Reservada para todos los diálogos. El valor alto evita que cualquier
+     stacking context de rutas animadas o cabeceras vuelva a taparlos. */
+  .layer-overlay { z-index: 2147483000; }
+  .layer-command { z-index: 100; }
+  .layer-toast { z-index: 110; }
+  .layer-overlay-notice { z-index: 1000; }
+
+  [data-noite-shell]:has([data-global-music-player][data-expanded='true']) {
+    --floating-controls-clearance: 17.5rem;
+  }
+
+  [data-noite-shell]:has([data-global-music-player][data-expanded='true'][data-provider='local']) {
+    --floating-controls-clearance: 10.5rem;
+  }
+
+  .app-route-content {
+    padding-top: var(--content-pad-y);
+    padding-bottom: var(--floating-controls-clearance) !important;
+    scroll-padding-bottom: var(--floating-controls-clearance);
+  }
+
+  .noite-menu-button {
+    @apply flex h-12 w-full items-center justify-center gap-3 rounded-[11px] border border-white/15 bg-white/5 font-title text-sm font-bold uppercase tracking-[0.18em] text-white transition duration-150 hover:border-fuchsia-300/60 hover:bg-white/10 focus-visible:scale-[1.03] focus-visible:border-cyan-300;
+  }
+
+  .noite-title-primary {
+    @apply flex min-h-14 w-full items-center justify-between rounded-2xl bg-white px-5 font-title text-sm font-bold uppercase tracking-[0.16em] text-neutral-950 shadow-[0_12px_36px_rgba(255,255,255,.08)] transition duration-200 hover:-translate-y-0.5 hover:bg-purple-100 hover:shadow-[0_16px_44px_rgba(168,85,247,.18)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0910] disabled:cursor-not-allowed disabled:opacity-35;
+  }
+
+  .noite-title-secondary {
+    @apply flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/[.045] px-5 text-sm font-semibold text-white/75 transition duration-200 hover:border-purple-300/35 hover:bg-white/[.08] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0910];
+  }
+
+  .title-feature-chip {
+    @apply rounded-full border border-white/10 bg-white/[.035] px-3 py-1.5 backdrop-blur-md;
+  }
+
+  .noite-player-card {
+    @apply flex min-h-36 flex-col items-center justify-center gap-4 rounded-[14px] border border-white/15 bg-white/5 text-lg font-semibold text-white transition duration-150 hover:border-cyan-300/70 hover:bg-white/10 focus-visible:scale-[1.03] focus-visible:border-cyan-300;
+  }
+
+  .noite-quick-setting {
+    @apply flex items-center justify-between gap-4 rounded-[11px] border border-white/10 bg-white/5 p-3 text-sm text-white/80;
+  }
+
+  [data-input-source='controller'] .arcade-focus:focus,
+  [data-input-source='controller'] button:focus,
+  [data-input-source='controller'] a:focus {
+    outline: 3px solid rgb(var(--theme-accent));
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgb(var(--theme-accent) / 0.18), 0 0 28px rgb(var(--theme-accent) / 0.35);
+  }
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --shell-gutter: clamp(16px, 2.5vw, 26px);
+  }
+}
+
+@media (max-height: 760px) {
+  :root {
+    --content-pad-y: 0.75rem;
+  }
+
+  .app-topbar {
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+  }
+
+  .app-route-content {
+    padding-top: 0.75rem !important;
+    padding-bottom: var(--floating-controls-clearance) !important;
+  }
+
+  .compact-height-hide {
+    display: none !important;
+  }
+
+  .noite-statusbar { height: 1.55rem; }
+  .noite-controller-hud { height: 1.7rem; }
+}
+
+/* NFR-A11Y-006 — respeto por prefers-reduced-motion, además del ajuste
+   personal en profiles.reduced_motion (sección 6.1 / 8.3). */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root[data-motion='reduced'] *,
+:root[data-motion='reduced'] *::before,
+:root[data-motion='reduced'] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+:root[data-motion='full'] .arcade-focus:focus-visible,
+:root[data-motion='full'] button:focus-visible,
+:root[data-motion='full'] a:focus-visible {
+  filter: saturate(1.15);
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.22), 0 0 24px rgba(59, 130, 246, 0.24);
+}
+
+/* El modo oscuro plano mantiene la paleta y elimina los degradados de las
+   superficies de interfaz; las portadas y demás contenido visual no cambian. */
+[data-noite-shell][data-theme-flat] .bg-cta-gradient {
+  background-image: none;
+  background-color: #ff4fa3;
+}
+
+[data-noite-shell][data-theme-flat] .bg-cta-secondary-gradient {
+  background-image: none;
+  background-color: #55b8ff;
+}
+/* Entry screens share the accessible light palette used by the local edition. */
+.noite-title-primary {
+  background: #6d28d9;
+  color: white;
+}
+.noite-title-primary:hover { background: #5b21b6; }
+.noite-title-secondary, .noite-quick-setting {
+  border-color: rgb(var(--noche-border));
+  background: rgb(var(--noche-surface));
+  color: rgb(var(--noche-text));
+}
+.noite-title-secondary:hover { background: rgb(var(--noche-surface-hover)); color: rgb(var(--noche-text)); }
