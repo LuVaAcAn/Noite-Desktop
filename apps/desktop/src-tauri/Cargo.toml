@@ -24,7 +24,7 @@ cpal = "0.15"
 zip = { version = "2.4", default-features = false, features = ["deflate"] }
 chrono = { version = "0.4", default-features = false, features = ["clock"] }
 argon2 = "0.5"
-chacha20poly1305 = "0.10"
+chacha20poly1305 = "0.11"
 zeroize = "1.8"
 arboard = { version = "3.4", default-features = false }
 rand = "0.9"
