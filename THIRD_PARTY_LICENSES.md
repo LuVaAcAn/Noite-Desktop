@@ -2,13 +2,12 @@
 
 Archivo generado por `apps/desktop/scripts/generate-third-party-notices.mjs` desde `package-lock.json`, `Cargo.lock` y los paquetes instalados para Windows x64. No editar manualmente.
 
-Paquetes inventariados: 479. Textos únicos de licencia/NOTICE: 113.
+Paquetes inventariados: 463. Textos únicos de licencia/NOTICE: 108.
 
 | Ecosistema | Paquete | Versión | Licencia declarada | Repositorio | Textos |
 |---|---|---:|---|---|---|
 | Cargo | adler2 | 2.0.1 | 0BSD OR MIT OR Apache-2.0 | https://github.com/oyvindln/adler2 | — |
 | Cargo | aead | 0.5.2 | MIT OR Apache-2.0 | https://github.com/RustCrypto/traits | — |
-| Cargo | aes | 0.8.4 | MIT OR Apache-2.0 | https://github.com/RustCrypto/block-ciphers | — |
 | Cargo | ahash | 0.8.12 | MIT OR Apache-2.0 | https://github.com/tkaitchuck/ahash | — |
 | Cargo | aho-corasick | 1.1.5 | Unlicense OR MIT | https://github.com/BurntSushi/aho-corasick | [65314a6c96683f76](#license-65314a6c96683f76) |
 | Cargo | alloc-no-stdlib | 2.0.4 | BSD-3-Clause | https://github.com/dropbox/rust-alloc-no-stdlib | [6c91ec82929f91ff](#license-6c91ec82929f91ff) |
@@ -36,8 +35,6 @@ Paquetes inventariados: 479. Textos únicos de licencia/NOTICE: 113.
 | Cargo | byteorder-lite | 0.1.0 | Unlicense OR MIT | https://github.com/image-rs/byteorder-lite | — |
 | Cargo | byteorder | 1.5.0 | Unlicense OR MIT | https://github.com/BurntSushi/byteorder | [65314a6c96683f76](#license-65314a6c96683f76) |
 | Cargo | bytes | 1.12.1 | MIT | https://github.com/tokio-rs/bytes | [51f778ffff2c0705](#license-51f778ffff2c0705) |
-| Cargo | bzip2-sys | 0.1.13+1.0.8 | MIT/Apache-2.0 | https://github.com/alexcrichton/bzip2-rs | — |
-| Cargo | bzip2 | 0.5.2 | MIT OR Apache-2.0 | https://github.com/trifectatechfoundation/bzip2-rs | — |
 | Cargo | camino | 1.2.5 | MIT OR Apache-2.0 | https://github.com/camino-rs/camino | — |
 | Cargo | cargo_metadata | 0.19.2 | MIT | https://github.com/oli-obk/cargo_metadata | — |
 | Cargo | cargo_toml | 0.22.3 | Apache-2.0 OR MIT | https://gitlab.com/lib.rs/cargo_toml | [fa4363848a0f6846](#license-fa4363848a0f6846) |
@@ -53,13 +50,10 @@ Paquetes inventariados: 479. Textos únicos de licencia/NOTICE: 113.
 | Cargo | cipher | 0.4.4 | MIT OR Apache-2.0 | https://github.com/RustCrypto/traits | — |
 | Cargo | clipboard-win | 5.4.1 | BSL-1.0 | https://github.com/DoumanAsh/clipboard-win | — |
 | Cargo | const-oid | 0.9.6 | Apache-2.0 OR MIT | https://github.com/RustCrypto/formats/tree/master/const-oid | — |
-| Cargo | constant_time_eq | 0.3.1 | CC0-1.0 OR MIT-0 OR Apache-2.0 | https://github.com/cesarb/constant_time_eq | — |
 | Cargo | cookie | 0.18.2 | MIT OR Apache-2.0 | https://github.com/SergioBenitez/cookie-rs | — |
 | Cargo | cpal | 0.15.3 | Apache-2.0 | https://github.com/rustaudio/cpal | [283ea6cc2997a1a7](#license-283ea6cc2997a1a7) |
 | Cargo | cpufeatures | 0.2.17 | MIT OR Apache-2.0 | https://github.com/RustCrypto/utils | — |
 | Cargo | cpufeatures | 0.3.0 | MIT OR Apache-2.0 | https://github.com/RustCrypto/utils | — |
-| Cargo | crc-catalog | 2.5.0 | MIT OR Apache-2.0 | https://github.com/akhilles/crc-catalog.git | — |
-| Cargo | crc | 3.4.0 | MIT OR Apache-2.0 | https://github.com/mrhooray/crc-rs.git | — |
 | Cargo | crc32fast | 1.5.0 | MIT OR Apache-2.0 | https://github.com/srijs/rust-crc32fast | — |
 | Cargo | crossbeam-channel | 0.5.16 | MIT OR Apache-2.0 | https://github.com/crossbeam-rs/crossbeam | — |
 | Cargo | crossbeam-utils | 0.8.22 | MIT OR Apache-2.0 | https://github.com/crossbeam-rs/crossbeam | — |
@@ -74,7 +68,6 @@ Paquetes inventariados: 479. Textos únicos de licencia/NOTICE: 113.
 | Cargo | darling_macro | 0.23.0 | MIT | https://github.com/TedDriggs/darling | [cc8f3c8ab396de7f](#license-cc8f3c8ab396de7f) |
 | Cargo | darling | 0.23.0 | MIT | https://github.com/TedDriggs/darling | [cc8f3c8ab396de7f](#license-cc8f3c8ab396de7f) |
 | Cargo | dasp_sample | 0.11.0 | MIT OR Apache-2.0 | https://github.com/rustaudio/sample.git | — |
-| Cargo | deflate64 | 0.1.12 | MIT | https://github.com/anatawa12/deflate64-rs | [e2509010ead2bd97](#license-e2509010ead2bd97) |
 | Cargo | defmt-macros | 1.1.1 | MIT OR Apache-2.0 | https://github.com/knurling-rs/defmt | — |
 | Cargo | defmt-parser | 1.0.0 | MIT OR Apache-2.0 | https://github.com/knurling-rs/defmt | — |
 | Cargo | defmt | 1.1.1 | MIT OR Apache-2.0 | https://github.com/knurling-rs/defmt | — |
@@ -131,7 +124,6 @@ Paquetes inventariados: 479. Textos únicos de licencia/NOTICE: 113.
 | Cargo | hashlink | 0.9.1 | MIT OR Apache-2.0 | https://github.com/kyren/hashlink | — |
 | Cargo | heck | 0.5.0 | MIT OR Apache-2.0 | https://github.com/withoutboats/heck | — |
 | Cargo | hex | 0.4.3 | MIT OR Apache-2.0 | https://github.com/KokaKiwi/rust-hex | — |
-| Cargo | hmac | 0.12.1 | MIT OR Apache-2.0 | https://github.com/RustCrypto/MACs | — |
 | Cargo | html5ever | 0.38.0 | MIT OR Apache-2.0 | https://github.com/servo/html5ever | — |
 | Cargo | http-body-util | 0.1.4 | MIT | https://github.com/hyperium/http-body | [57f841bc9767b5b8](#license-57f841bc9767b5b8) |
 | Cargo | http-body | 1.1.0 | MIT | https://github.com/hyperium/http-body | [57f841bc9767b5b8](#license-57f841bc9767b5b8) |
@@ -178,8 +170,6 @@ Paquetes inventariados: 479. Textos únicos de licencia/NOTICE: 113.
 | Cargo | lock_api | 0.4.14 | MIT OR Apache-2.0 | https://github.com/Amanieu/parking_lot | — |
 | Cargo | log | 0.4.33 | MIT OR Apache-2.0 | https://github.com/rust-lang/log | — |
 | Cargo | lru-slab | 0.1.2 | MIT OR Apache-2.0 OR Zlib | https://github.com/Ralith/lru-slab | — |
-| Cargo | lzma-rs | 0.3.0 | MIT | https://github.com/gendx/lzma-rs | [491ab427237785b5](#license-491ab427237785b5) |
-| Cargo | lzma-sys | 0.1.20 | MIT/Apache-2.0 | https://github.com/alexcrichton/xz2-rs | — |
 | Cargo | markup5ever | 0.38.0 | MIT OR Apache-2.0 | https://github.com/servo/html5ever | — |
 | Cargo | memchr | 2.8.3 | Unlicense OR MIT | https://github.com/BurntSushi/memchr | [65314a6c96683f76](#license-65314a6c96683f76) |
 | Cargo | mime | 0.3.17 | MIT OR Apache-2.0 | https://github.com/hyperium/mime | — |
@@ -198,7 +188,6 @@ Paquetes inventariados: 479. Textos únicos de licencia/NOTICE: 113.
 | Cargo | parking_lot_core | 0.9.12 | MIT OR Apache-2.0 | https://github.com/Amanieu/parking_lot | — |
 | Cargo | parking_lot | 0.12.5 | MIT OR Apache-2.0 | https://github.com/Amanieu/parking_lot | — |
 | Cargo | password-hash | 0.5.0 | MIT OR Apache-2.0 | https://github.com/RustCrypto/traits/tree/master/password-hash | — |
-| Cargo | pbkdf2 | 0.12.2 | MIT OR Apache-2.0 | https://github.com/RustCrypto/password-hashes/tree/master/pbkdf2 | — |
 | Cargo | percent-encoding | 2.3.2 | MIT OR Apache-2.0 | https://github.com/servo/rust-url/ | — |
 | Cargo | phf_codegen | 0.13.1 | MIT | https://github.com/rust-phf/rust-phf | [ec5d7c32366268f1](#license-ec5d7c32366268f1) |
 | Cargo | phf_generator | 0.13.1 | MIT | https://github.com/rust-phf/rust-phf | [ec5d7c32366268f1](#license-ec5d7c32366268f1) |
@@ -269,7 +258,6 @@ Paquetes inventariados: 479. Textos únicos de licencia/NOTICE: 113.
 | Cargo | serialize-to-javascript-impl | 0.1.2 | MIT OR Apache-2.0 | https://github.com/chippers/serialize-to-javascript | — |
 | Cargo | serialize-to-javascript | 0.1.2 | MIT OR Apache-2.0 | https://github.com/chippers/serialize-to-javascript | — |
 | Cargo | servo_arc | 0.4.3 | MIT OR Apache-2.0 | https://github.com/servo/stylo | — |
-| Cargo | sha1 | 0.10.7 | MIT OR Apache-2.0 | https://github.com/RustCrypto/hashes | — |
 | Cargo | sha2 | 0.10.9 | MIT OR Apache-2.0 | https://github.com/RustCrypto/hashes | — |
 | Cargo | shlex | 2.0.1 | MIT OR Apache-2.0 | https://github.com/comex/rust-shlex | — |
 | Cargo | signature | 2.2.0 | Apache-2.0 OR MIT | https://github.com/RustCrypto/traits/tree/master/signature | — |
@@ -407,7 +395,6 @@ Paquetes inventariados: 479. Textos únicos de licencia/NOTICE: 113.
 | Cargo | wmi | 0.18.3 | MIT OR Apache-2.0 | https://github.com/ohadravid/wmi-rs | — |
 | Cargo | writeable | 0.6.3 | Unicode-3.0 | https://github.com/unicode-org/icu4x | [cde87abe221f413f](#license-cde87abe221f413f) |
 | Cargo | wry | 0.55.1 | Apache-2.0 OR MIT | https://github.com/tauri-apps/wry | [26235c41e314fb0d](#license-26235c41e314fb0d) |
-| Cargo | xz2 | 0.1.7 | MIT/Apache-2.0 | https://github.com/alexcrichton/xz2-rs | — |
 | Cargo | yoke-derive | 0.8.2 | Unicode-3.0 | https://github.com/unicode-org/icu4x | [cde87abe221f413f](#license-cde87abe221f413f) |
 | Cargo | yoke | 0.8.3 | Unicode-3.0 | https://github.com/unicode-org/icu4x | [cde87abe221f413f](#license-cde87abe221f413f) |
 | Cargo | zerocopy | 0.8.56 | BSD-2-Clause OR Apache-2.0 OR MIT | https://github.com/google/zerocopy | — |
@@ -421,9 +408,6 @@ Paquetes inventariados: 479. Textos únicos de licencia/NOTICE: 113.
 | Cargo | zip | 2.4.2 | MIT | https://github.com/zip-rs/zip2.git | [04dc52136d82400b](#license-04dc52136d82400b) |
 | Cargo | zmij | 1.0.23 | MIT | https://github.com/dtolnay/zmij | — |
 | Cargo | zopfli | 0.8.3 | Apache-2.0 | https://github.com/zopfli-rs/zopfli | [b969ab4be2f63a5d](#license-b969ab4be2f63a5d) |
-| Cargo | zstd-safe | 7.2.4 | MIT OR Apache-2.0 | https://github.com/gyscos/zstd-rs | [10b6a2ae8a02143a](#license-10b6a2ae8a02143a), [4bf96504d6e83ce5](#license-4bf96504d6e83ce5), [84b7e1b767becaf1](#license-84b7e1b767becaf1) |
-| Cargo | zstd-sys | 2.0.16+zstd.1.5.7 | MIT/Apache-2.0 | https://github.com/gyscos/zstd-rs | [10b6a2ae8a02143a](#license-10b6a2ae8a02143a), [4bf96504d6e83ce5](#license-4bf96504d6e83ce5), [30367d9a4eadd6c9](#license-30367d9a4eadd6c9), [84b7e1b767becaf1](#license-84b7e1b767becaf1) |
-| Cargo | zstd | 0.13.3 | MIT | https://github.com/gyscos/zstd-rs | [84b7e1b767becaf1](#license-84b7e1b767becaf1) |
 | Cargo | zune-core | 0.5.3 | MIT OR Apache-2.0 OR Zlib | https://github.com/etemesi254/zune-image | — |
 | Cargo | zune-jpeg | 0.5.15 | MIT OR Apache-2.0 OR Zlib | https://github.com/etemesi254/zune-image/tree/dev/crates/zune-jpeg | — |
 | npm | @fontsource-variable/geist | 5.3.0 | OFL-1.1 | git+https://github.com/fontsource/font-files.git | [f6304442364c4b2b](#license-f6304442364c4b2b) |
@@ -593,16 +577,6 @@ INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
 OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
 TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
 THIS SOFTWARE.
-```
-
-<a id="license-10b6a2ae8a02143a"></a>
-
-## 10b6a2ae8a02143a
-
-Usado por: Cargo:zstd-safe@7.2.4, Cargo:zstd-sys@2.0.16+zstd.1.5.7
-
-```text
-MIT or Apache-2.0
 ```
 
 <a id="license-12c7116c4425c559"></a>
@@ -1277,47 +1251,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
-<a id="license-30367d9a4eadd6c9"></a>
-
-## 30367d9a4eadd6c9
-
-Usado por: Cargo:zstd-sys@2.0.16+zstd.1.5.7
-
-```text
-The auto-generated bindings are under the 3-clause BSD license:
-
-BSD License
-
-For Zstandard software
-
-Copyright (c) 2016-present, Facebook, Inc. All rights reserved.
-
-Redistribution and use in source and binary forms, with or without modification,
-are permitted provided that the following conditions are met:
-
- * Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
-
- * Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
-
- * Neither the name Facebook nor the names of its contributors may be used to
-   endorse or promote products derived from this software without specific
-   prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
-ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
-ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-```
-
 <a id="license-381f992f70f7089d"></a>
 
 ## 381f992f70f7089d
@@ -1515,36 +1448,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
-
-<a id="license-491ab427237785b5"></a>
-
-## 491ab427237785b5
-
-Usado por: Cargo:lzma-rs@0.3.0
-
-```text
-MIT License
-
-Copyright (c) 2017 - 2018  Guillaume Endignoux
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 ```
 
 <a id="license-4a4d43f3f90d1d8b"></a>
@@ -1993,7 +1896,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
 
 ## 4bf96504d6e83ce5
 
-Usado por: Cargo:sync_wrapper@1.0.2, Cargo:zstd-safe@7.2.4, Cargo:zstd-sys@2.0.16+zstd.1.5.7
+Usado por: Cargo:sync_wrapper@1.0.2
 
 ```text
 Apache License
@@ -3043,23 +2946,6 @@ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
 LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-```
-
-<a id="license-84b7e1b767becaf1"></a>
-
-## 84b7e1b767becaf1
-
-Usado por: Cargo:zstd-safe@7.2.4, Cargo:zstd-sys@2.0.16+zstd.1.5.7, Cargo:zstd@0.13.3
-
-```text
-The MIT License (MIT)
-Copyright (c) 2016 Alexandre Bury
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
 <a id="license-87ddba564a59e4ef"></a>
@@ -5150,39 +5036,6 @@ Usado por: Cargo:typenum@1.20.1
 
 ```text
 MIT OR Apache-2.0
-```
-
-<a id="license-e2509010ead2bd97"></a>
-
-## e2509010ead2bd97
-
-Usado por: Cargo:deflate64@0.1.12
-
-```text
-The MIT License (MIT)
-
-Copyright (c) .NET Foundation and Contributors
-Copyright (c) anatawa12 2023
-
-All rights reserved.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 ```
 
 <a id="license-e5a8da5b43b01f43"></a>

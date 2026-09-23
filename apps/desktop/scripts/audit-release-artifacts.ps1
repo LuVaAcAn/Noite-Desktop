@@ -29,18 +29,10 @@ foreach ($candidate in @($binary, $installer)) {
   if (Test-Path -LiteralPath $candidate) { $scanFiles += $candidate }
 }
 
-$needles = @(
-  'BEGIN PRIVATE KEY',
-  'BEGIN RSA PRIVATE KEY',
-  'BEGIN OPENSSH PRIVATE KEY',
-  'C:\Users\',
-  '/home/runner/',
-  '/Users/'
-)
-foreach ($needle in $needles) {
-  & rg -a -l -F -- $needle $scanFiles | Out-Null
-  if ($LASTEXITCODE -eq 0) { throw "Los artefactos contienen el patrón prohibido: $needle" }
-  if ($LASTEXITCODE -ne 1) { throw "No se pudieron inspeccionar los artefactos para: $needle" }
-}
+$scanner = Join-Path $PSScriptRoot 'scan-artifact-markers.mjs'
+& node $scanner --self-test
+if ($LASTEXITCODE -ne 0) { throw 'Fallaron las pruebas del inspector de artefactos.' }
+& node $scanner @scanFiles
+if ($LASTEXITCODE -ne 0) { throw 'Los artefactos no superaron la inspección.' }
 
 Write-Host 'Artefactos: sin source maps, credenciales privadas ni rutas locales conocidas.'
