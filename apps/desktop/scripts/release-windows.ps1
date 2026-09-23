@@ -99,7 +99,7 @@ try {
   ) -join $unitSeparator
   # Tauri applies bundle metadata before invoking SignTool. This ordering is
   # essential: signing Noite.exe before `tauri bundle` invalidates its signature.
-  Invoke-Checked $npm @('run', 'tauri', '--', 'build', '--bundles', 'nsis', '--config', $signConfig, '--ci') $repoRoot
+  Invoke-Checked $npm @('run', 'tauri', '--', 'build', '--bundles', 'nsis', '--config', $signConfig, '--ci', '--', '--locked') $repoRoot
 } finally {
   Remove-Item Env:CARGO_ENCODED_RUSTFLAGS -ErrorAction SilentlyContinue
   Remove-Item -LiteralPath $signConfig -Force -ErrorAction SilentlyContinue
@@ -107,6 +107,7 @@ try {
 
 if (-not (Test-Path -LiteralPath $binaryPath)) { throw 'Tauri no produjo Noite.exe.' }
 if (-not (Test-Path -LiteralPath $installerPath)) { throw 'Tauri no produjo el instalador NSIS esperado.' }
+Invoke-Checked 'powershell.exe' @('-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', (Join-Path $PSScriptRoot 'audit-release-artifacts.ps1')) $repoRoot
 Invoke-Checked $signTool @('verify', '/pa', '/all', '/v', $binaryPath) $repoRoot
 Invoke-Checked $signTool @('verify', '/pa', '/all', '/v', $installerPath) $repoRoot
 
